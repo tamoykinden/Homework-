@@ -25,3 +25,10 @@ class Lecturer(Mentor):
 class Reviewer(Mentor):
     def __init__(self, name, surname):
         super().__init__(name, surname)
+# Создаем студента
+student = Student('Денис', 'Тамойкин', 'М')
+student.courses_in_progress.append('Python')
+# Создаем лектора
+lecturer = Lecturer('Петр', 'Петров')
+# Создаем эксперта
+reviewer = Reviewer('Сидор', 'Сидоров')
